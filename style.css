@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playwrite+CO+Guides&display=swap');
+
+*{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Outfit", serif;
+    color: white;
+}
+.main{
+    background: linear-gradient(#EA8D8D,#A890FE);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+}
+.main>.section{
+    width: 100%;
+}
+.main .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.main nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.main nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.main a:hover{
+    color: blue;
+
+}
+.primary-heading{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.plain-text{
+    font-size: 1.4rem;
+}
+span{
+    color: #00fff0;
+}
+.head h1.hover{
+    color: #00fff0;
+}
+.home-icon svg{
+    width: 6%;
+}
+.home .prof-pic{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: #EA8D8D;
+}
+.prof-pic img{
+    height: 90%;
+    margin-top: 40px;
+    border-radius: 50%;
+}
+.home .prof-pic:hover{
+    img{transform: translateY(-30px) scale(1.3);
+    transition: transform .3s;}
+}
+.about{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    height: 100vh;
+}
+.about-image{
+    height: 400px;
+    width: 400px;
+    border: 5px #A890FE;
+    border-radius: 50%;
+    box-shadow:0px 0px 20px #A890FE, 0px 0px 40px #A890FE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.about-image img{
+    height: 100%;
+}
+.about-text{
+    width: 50%;
+    text-align:justify;
+    justify-content: center;
+}
+.service,.project{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.card{
+    height: 400px;
+    width: 350px;
+    border: 5px #EA8D8D, solid;
+    border-radius: 30px;
+    box-shadow:0px 0px 20px #EA8D8D, 0px 0px 40px #EA8D8D;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+    img{
+        width: 300px;
+    }
+}
+.skill-text{
+    font-size:medium;
+    font-weight: 300;
+    padding: 10px;
+}
+.card:hover img{
+    transform: scale(1.2);
+    transition: all .2s linear;
+    filter: grayscale(100%);
+}
+.service:hover .card{
+    filter: grayscale(100%);
+}
+.card:hover img{
+    filter: grayscale(0%);
+}
+.project.card{
+    overflow: hidden;
+}
+.project.card:hover{
+    border: 2px crimson;
+    box-shadow: 1px 1px 10px 5px crimson;
+}
+.service.card:hover{
+    border: 2px crimson;
+}
